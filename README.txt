@@ -38,7 +38,7 @@ Releases:
 -Realizar testes finais e corrigir possíveis erros.
 
 Autores:
-Ighor Ibraim Scavone
-Matheus Rodrigues Butinhão
-João Filipe Alves Borges
-Denilson Murilo Silva
+Matheus Rodrigues Butinhão - Product Owner - Scrum Master
+Ighor Ibraim Scavone - Development Team 
+João Filipe Alves Borges - Development Team
+Denilson Murilo Silva - Development Team
