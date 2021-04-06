@@ -57,8 +57,11 @@ body{
 #bodyContent p{
     color: black !important;
     font-weight: normal;
-}
+} 
 
+#alinhacentro{
+    align-items: center;
+}
 .loader {
     display: none;
     position: fixed;

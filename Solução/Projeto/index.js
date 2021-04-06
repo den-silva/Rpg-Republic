@@ -9,9 +9,15 @@ router.get('/', function(req,res){
 
 })
 
-router.get('/login', function(req,res){
+router.get('/login.html', function(req,res){
 
     res.sendFile(path.join(__dirname + '/Views/login.html'))
+
+})
+
+router.get('/sobre.html', function(req,res){
+
+    res.sendFile(path.join(__dirname + '/Views/sobre.html'))
 
 })
 
