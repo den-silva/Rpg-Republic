@@ -1,4 +1,5 @@
-Projeto RPG Republic
+#Projeto RPG Republic#
+
 O RPG Republic visa facilitar a vida de muitos jogadores de RPG, que buscam jogar uma partida rápida e simples, porém não conseguem encontrar um aplicativo que consegue satisfazer esses requisitos. Com o RPG Republic será possível criar um jogo do jeito que a pessoa decidir, inserindo os campos necessários para a ficha do jogo e um sistema de rolamento de dados dinâmico.
 
 O site será hospedado pela Microsoft Azure;
@@ -42,3 +43,7 @@ Matheus Rodrigues Butinhão - Product Owner - Scrum Master
 Ighor Ibraim Scavone - Development Team 
 João Filipe Alves Borges - Development Team
 Denilson Murilo Silva - Development Team
+
+ - Para poder testar esta aplicação, é necessário ter o Node instalado (versão mínima: 6.14.11);
+ 
+ - Deve ser feita a instalação do pacote básico do npm (npm install);
