@@ -1,11 +1,11 @@
-#Projeto RPG Republic#
+# Projeto RPG Republic 
 
 O RPG Republic visa facilitar a vida de muitos jogadores de RPG, que buscam jogar uma partida rápida e simples, porém não conseguem encontrar um aplicativo que consegue satisfazer esses requisitos. Com o RPG Republic será possível criar um jogo do jeito que a pessoa decidir, inserindo os campos necessários para a ficha do jogo e um sistema de rolamento de dados dinâmico.
 
 O site será hospedado pela Microsoft Azure;
 O projeto irá utilizar o banco de dados não relacional Mongo DB;
 A Linguagem do projeto será Java Script - Node.js;
-O Scram e Sprints Jira se encontram no seguinte link: https://rpgrepublic.atlassian.net/;
+O Scrum e Sprints Jira se encontram no seguinte link: https://rpgrepublic.atlassian.net/;
 O sistema também utilizará a interface gráfica de bibliotecas Bootstrap e JQuery;
 O projeto será open source e estará disponível no seguinte link: https://github.com/den-silva/Rpg-Republic/.
 
