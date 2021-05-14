@@ -15,11 +15,15 @@ router.get('/login.html', function(req,res){
 
 })
 
+app.use(express.static( __dirname + '/Views/'));
+
 router.get('/sobre.html', function(req,res){
 
     res.sendFile(path.join(__dirname + '/Views/sobre.html'))
 
 })
+
+
 
 app.use('/', router);
 app.listen(process.env.port || 3000);
