@@ -21,7 +21,9 @@ router.get('/sobre.html', function(req,res){
 
 })
 
+app.use(express.static( __dirname + '/Views/'));
+
 app.use('/', router);
 app.listen(process.env.port || 3000);
 
-console.log("Server rodando")
+console.log("Server rodando, listening at dor :3000 ")
