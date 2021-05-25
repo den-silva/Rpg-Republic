@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="https://imgc.androidappsapk.co/fXDz_Tj2gGTq7hI2Q8cFSCLy-a8Bpmhle27baJq3fFNzrkYgF5jtff-ADsHBTNOuKxM=s300">
+  <link rel="icon"
+    href="https://imgc.androidappsapk.co/fXDz_Tj2gGTq7hI2Q8cFSCLy-a8Bpmhle27baJq3fFNzrkYgF5jtff-ADsHBTNOuKxM=s300">
 
   <title>Registrar</title>
 
@@ -18,7 +19,7 @@
   <script src="content/data-tables/js/dataTables.bootstrap.js"></script>
   <script src="content/js/bootstrap.min.js"></script>
   <script src="content/adicional/main.js"></script>
-  <script src=""></script>
+  <script src="content/adicional/registrar.js"></script>
 
   <!-- css -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
@@ -39,28 +40,30 @@
   </div>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="home.html"> <span style="font-size: 25px;">🎲</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div id=headerRegistrar>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="home.html"> <span style="font-size: 25px;">🎲</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre ❔</a>
-          </li>
-        </ul>
-        <a class="nav-link" href="login.html">Login</a>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre ❔</a>
+            </li>
+          </ul>
+          <a class="nav-link" href="login.html">Login</a>
+        </div>
+      </nav>
+    </div>>
   </header>
 
-  <br/> <br/><br/> <br/>
+  <br /> <br /><br /> <br />
 
   <div class="container">
     <div class="row">
@@ -68,10 +71,10 @@
 
       <form id="bodyContent" class="form-signin col-4" action="index.html">
         <label style="font-size: 50px;">🎲</label>
-        <input id="inputEmail" class="form-control" placeholder="Usuario" required="" autofocus="">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Repetir Senha" required="">
-        <br />        
+        <input id="txtUsuario" class="form-control" placeholder="Usuario" required="" autofocus="">
+        <input type="password" id="txtSenha" class="form-control" placeholder="Senha" required="">
+        <input type="password" id="txtConfirmarSenha" class="form-control" placeholder="Repetir Senha" required="">
+        <br />
         <a class="btn btn-lg btn-block btn-primary" href="home.html">Cadastrar</a>
         <p class="mt-5 mb-3 text-muted"></p>
       </form>
