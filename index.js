@@ -15,7 +15,6 @@ router.get('/login.html', function(req,res){
 
 })
 
-app.use(express.static( __dirname + '/Views/'));
 
 router.get('/sobre.html', function(req,res){
 
@@ -23,8 +22,21 @@ router.get('/sobre.html', function(req,res){
 
 })
 
+router.get('/registrar.html', function(req,res){
+
+    res.sendFile(path.join(__dirname + '/Views/registrar.html'))
+
+})
+
 app.use(express.static( __dirname + '/Views/'));
 
+
+const server = require('http').createServer(app);
+const io = require ('socket.io')(server);
+
+io.on('connection', socket => {
+    console.log('Novo Usuario Conectado: ${socket.id}');
+});
 
 app.use('/', router);
 app.listen(process.env.port || 3000);
