@@ -7,7 +7,7 @@ var home = function () {
     };
 
     var validaEntrarSala = function () {
-        if (validaSala($(controles.TxtSala).val())) {
+        if (validaSala($("#txtSala").val())) {
 
             window.location.href = "/sala.html";
         }
