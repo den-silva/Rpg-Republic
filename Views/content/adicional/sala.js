@@ -1,5 +1,7 @@
 var sala = function () {
 
+    var idUsuario;
+
     var controles = function () {
         return {
             DivChat: ".messages",
@@ -7,9 +9,24 @@ var sala = function () {
         };
     };
 
-    var CriaNumeroSalas = function () {
-        return Math.floor((Math.random() * 10) + 1); //cria salaaleatoria  
+    var CriaSalas = function () {
+        return Math.floor((Math.random() * 10) + 1); //cria salaAleatoria  
+        
+        $.ajax({
+            data: idUsuario,
+            url: "sala/PesquisarFicha",
+            context: document.body
+          }).done(function(data) {
+            $( this ).addClass( "done" );
+            preecheFicha(data);
+          }).fail(function(){
+            alert("Erro do servidor");
+          })
     };
+
+    var preecheFicha = function(data){
+
+    }
 
     var adicionarMensagem = function () {
         debugger
@@ -17,6 +34,7 @@ var sala = function () {
 
 
     };
+
     var GetMensagem = function () {
         var texto = $("#txtText").val();
         $("#txtText").val('');
@@ -25,6 +43,7 @@ var sala = function () {
 
     return {
         controles: controles,
-        adicionarMensagem: adicionarMensagem
+        adicionarMensagem: adicionarMensagem,
+        CriaSalas:CriaSalas
     };
 }();

@@ -3,10 +3,10 @@ var registrar = function () {
     var controles = function () {
 
         return{
-            txtUsuario: "#",
-            txtUsuario: "#",
-            txtUsuario: "#",
-        }
+            txtUsuario: "#txtUsuario",
+            txtsenha: "#txtSenha",
+            txtconfirmaSenha: "#txtConfirmarSenha",
+        };
     };
 
     var registrar = function(){
@@ -22,9 +22,25 @@ var registrar = function () {
     };
 
     var validaUsuario = function(){
-
         return true;
-    }
+        $.ajax({
+            data: getDto(),
+            url: "registrar/registrar",
+            context: document.body
+          }).done(function() {
+            $( this ).addClass( "done" );
+          }).fail(function(){
+            alert("Erro do servidor");
+          })
+       
+    };
+
+    var getDto = function(){
+        var dto = {
+            'senha': controles.txtsenha,
+            'usuario': controles.txtUsuario,
+        }
+    };
 
     return {
         registrar: registrar,
