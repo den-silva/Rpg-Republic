@@ -46,33 +46,37 @@ body{
 }
 
 .bodyImage1{
-    background-image: url("images/home.png");    
+    background-image: url("images/login_cadastro.jpg");
+    background-size: cover;
 }
 
 .bodyImage2{
-    background-image: url("images/home.png");    
+    background-image: url("images/login_cadastro.jpg");    
 }
 
 .bodyImage3{
-    background-image: url("images/home.png");    
+    background-image: url("images/login_cadastro.jpg");    
 }
 
 .bodyImage4{
-    background-image: url("images/home.png");    
+    background-image: url("images/home.gif");    
 }
 
 .bodyImage5{
-    background-image: url("images/home.png");    
+    background-image: url("images/home.gif");    
 }
 
-.bodySalas {
-    padding: 40px;
-    background-color: rgb(200, 232, 232, 0.8);
-    height: 100%;
+.bodyImage6{
+    background-image: url("images/home.gif");    
 }
+
+.bodyImage7{
+    background-image: url("images/sobre.jpg");    
+}
+
 
 #bodyContent {
-    margin-top: 50px;
+    margin: 21% auto;
     background-color: rgb(232, 232, 232, 0.8);
     height: 100%;
 }
