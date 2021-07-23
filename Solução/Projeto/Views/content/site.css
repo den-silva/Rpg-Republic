@@ -137,3 +137,9 @@ footer{
     background-color: white;
     border-radius: 100%;
 }
+
+.jumbotron {
+
+    height: 850px !important;
+
+}
